@@ -7,7 +7,7 @@
 
 O DarkCode é um canal para o aprendizado de designs da Web, criação de sites, designs de interface do usuário usando apenas HTML5 e CSS3 e algum Javascript.
 
-Os exercício foram construídos conforme a playlist do canal no [https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw/playlists](Youtube).
+Os exercícios foram construídos conforme a playlist do canal no [Youtube](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw/playlists).
 
 Meus agradecimentos ao DarkCode por disponibilizar os códigos para estudo.
 
