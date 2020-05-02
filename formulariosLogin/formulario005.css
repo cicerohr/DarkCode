@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #333333;
+}
+
+main {
+    width: 360px;
+    height: 600px;
+    background: url(imagens/formulario001.jpg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 40px;
+    margin-top: 125px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.tbox {
+    width: 260px;
+    height: 40px;
+    background: #f1f1f1b3;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.tbox input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 90%;
+    line-height: 37px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.btn {
+    width: 260px;
+    height: 40px;
+    background: #3498db;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.b1, .b2, .b3 {
+    display: block;
+    width: 260px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: auto;
+    transition: 0.4s all;
+}
+
+.b3 {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #3498db;
+}
+
+a:hover {
+    background: #00000060;
+}

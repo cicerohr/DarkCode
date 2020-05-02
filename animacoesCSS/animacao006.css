@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #313131;
+    padding: 10px;
+}
+
+.box span {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: #34495e;
+    animation: lol 4s infinite;
+}
+
+@keyframes lol {
+    0% {
+        margin: 0;
+    }
+    25% {
+        margin: 0 0 0 120px;
+    }
+    50% {
+        margin: 120px 0 0 120px;
+    }
+    75% {
+        margin: 120px 120px 0 0;
+    }
+}
+
+nav {
+    position: absolute;
+    width: 15rem;
+    height: 1.5rem;
+    top: 68%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+nav::after {
+    content: "☜";
+    position: absolute;
+    font-size: 30px;
+    top: -12px;
+    left: -15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

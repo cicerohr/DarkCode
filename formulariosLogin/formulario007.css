@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Permanent+Marker&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: #487eb0;
+}
+.signup-form {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: url(imagens/formulario007.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.signup-form h1 {
+    margin-top: 100px;
+    font-family: "Permanent Marker", cursive;
+    color: #ffffff;
+    font-size: 40px;
+}
+.signup-form input {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.txtb {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+}
+.signup-bt {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background: #487eb0;
+    color: #ffffff;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.signup-bt:hover {
+    transform: scale(0.96);
+}
+.signup-form a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+}
+.signup-form a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}

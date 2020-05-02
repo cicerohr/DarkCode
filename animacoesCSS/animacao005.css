@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.text:before {
+    content: 'darkcode';
+    color: black;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    transition: 0.9s;
+}
+
+.text:hover:before {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    width: 15rem;
+    height: 1.5rem;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+nav::after {
+    content: "☜";
+    position: absolute;
+    font-size: 30px;
+    top: -12px;
+    left: -15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

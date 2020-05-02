@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.ttf?drs9tb') format('truetype'), url('fonts/icomoon.woff?drs9tb') format('woff'), url('fonts/icomoon.svg?drs9tb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #575757;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    color: #383838;
+    margin: 1rem auto;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(252, 252, 252, 0.99);
+    font-size: 4rem;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 8rem;
+    box-shadow: inset 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: #575757;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline #818181;
+    transition: all 0.5s ease-in;
+}
+
+abbr {
+    text-decoration: dashed #818181;
+}
+
+abbr:hover {
+    cursor: help;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quotes-left:before {
+    content: "\e977";
+}
+
+.icon-quotes-right:before {
+    content: "\e978";
+}
+
+.icon-point-left:before {
+    content: "\ea06";
+}
+
+.icon-cross:before {
+    content: "\ea0f";
+}
+
+.icon-checkmark::before {
+    content: "\ea10";
+    font-size: 0.8rem;
+    position: relative;
+    left: -5px;
+    color: rgb(16, 158, 16);
+}
+
+.icon-share:before {
+    content: "\ea7d";
+}
+
+.icon-facebook2::before {
+    content: "\ea91";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+.icon-blogger2:before {
+    content: "\eab8";
+}
+
+header>div, main>div, footer {
+    width: 100%;
+    padding: 2rem 8rem;
+    background-color: rgba(252, 252, 252, 0.99);
+    box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.5);
+}
+
+header>div {
+    border-bottom: 1px solid #818181;
+}
+
+main>div {
+    border-top: 1px solid #818181;
+    border-bottom: 1px solid #818181;
+}
+
+header li {
+    display: inline;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+.bgimg-1, .bgimg-2 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 22rem;
+}
+
+.bgimg-1 {
+    background-image: url("imagens/grayscale-photo-of-computer-laptop-near-white-notebook-and-169573.jpg");
+}
+
+.bgimg-2 {
+    background-image: url("imagens/white-printer-paper-196645.jpg");
+}
+
+.link-externo::after {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("https://developer.mozilla.org/static/general/external-link.fb3c293b9226.svg");
+    background-size: 0.75rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.4rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.flex-container>div {
+    width: 33rem;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 103rem) {
+    h1 {
+        text-align: center;
+    }
+    header>div, main>div, footer {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 56rem) {
+    header>div, main>div, footer {
+        padding: 2rem 1rem;
+    }
+}
+
+footer {
+    border-top: 1px solid #818181;
+}
+
+/*
+    Acessibilidade 
+    https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/accesskey
+*/
+
+a[accesskey]:after, button[accesskey]:after, input[accesskey]:after, label[accesskey]:after, legend[accesskey]:after, textarea[accesskey]:after {
+    margin-left: 0.3em;
+    content: "[" attr(accesskey) "]";
+}

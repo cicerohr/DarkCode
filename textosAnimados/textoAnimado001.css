@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    min-height: 100vh;
+    background-image: url(imagens/textoanimacao001.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #2c3e5036;
+    background-image: url(imagens/water.png);
+    -webkit-background-clip: text;
+    animation: water 15s infinite;
+}
+
+@keyframes water {
+    from {
+        background-position: left 0 top 0;
+    }
+    to {
+        background-position: left 1000px top 0;
+    }
+}
+
+nav {
+    position: absolute;
+    width: 15rem;
+    height: 1.5rem;
+    top: 60%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+nav::after {
+    content: "☜";
+    position: absolute;
+    font-size: 30px;
+    top: -12px;
+    left: -15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

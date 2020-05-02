@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ionicons", sans-serif;
+}
+
+.a1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.a1 a {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 50%;
+}
+
+.a1 a:before {
+    content: "\f2d3";
+    display: block;
+    margin: 13px 0;
+    transition: all 0.5s;
+}
+.a1 a:hover:before {
+    margin-top: -44px;
+}
+
+.a1 a:after {
+    content: "\f2d3";
+    display: block;
+    transition: all 0.5s;
+}
+
+nav {
+    position: absolute;
+    width: 15rem;
+    height: 1.5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+}
+
+nav::after {
+    content: "☜";
+    position: absolute;
+    font-size: 30px;
+    top: -12px;
+    left: -15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

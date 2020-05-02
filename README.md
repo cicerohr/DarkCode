@@ -5,11 +5,13 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-O DarkCode é um canal para o aprendizado de designs da Web, criação de sites, designs de interface do usuário usando apenas HTML5 e CSS3 e algum Javascript.
+O DarkCode é um canal para o aprendizado de designs para a Web, criação de sites, designs de interface do usuário usando apenas HTML5 e CSS3 e algum Javascript.
 
-Os exercícios foram construídos conforme a playlist do canal no [Youtube](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw/playlists).
+O menu, dos tutoriais, foi construído conforme a playlist do canal no [Youtube](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw/playlists).
 
-Meus agradecimentos ao DarkCode por disponibilizar os códigos para estudo.
+> _My thanks to DarkCode for making the codes available for learning._
+>
+> _Thank you!_
 
 ## Meta
 
@@ -20,9 +22,9 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 ## Contributing
 
 1. Faça o _fork_ do projeto (<https://github.com/cicerohr/DarkCode/fork>)
-2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/DarkCode`)
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
-4. _Push_ (`git push origin feature/fooBar`)
+4. _Push_ (`git push origin feature/DarkCode`)
 5. Crie um novo _Pull Request_
 
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square

@@ -1,0 +1,61 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+}
+
+.side {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.side a {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 22px;
+    display: block;
+    width: 130px;
+    padding: 12px;
+    text-decoration: none;
+    margin: 8px;
+    color: white;
+    border-radius: 6px;
+    margin-left: -107px;
+    transition: 0.5s all;
+}
+
+.side a:hover {
+    margin-left: 0;
+}
+
+nav {
+    position: absolute;
+    width: 15rem;
+    height: 1.5rem;
+    top: 68%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+nav::after {
+    content: "☜";
+    position: absolute;
+    font-size: 30px;
+    top: -12px;
+    left: -15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

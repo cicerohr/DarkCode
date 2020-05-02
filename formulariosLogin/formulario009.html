@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario009.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Login da Epic Games com validação usando HTML CSS e JQuery</title>
+</head>
+
+<body>
+    <!-- main.login-form>div.logo>img^div.social-media>(button.fb>img[src=imagens/])*5 -->
+    <main class="login-form">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="">
+        </div>
+        <div class="social-media">
+            <button class="fb"><img src="imagens/fb.png" alt=""></button>
+            <button class="google"><img src="imagens/google.png" alt=""></button>
+            <button class="ps"><img src="imagens/ps.png" alt=""></button>
+            <button class="xbox"><img src="imagens/xbox.png" alt=""></button>
+            <button class="switch"><img src="imagens/switch.png" alt=""></button>
+        </div>
+        <!-- h6{Inscrever-se}+form>(div.textbox>input[placeholder=]+span.check-mensagem)*2 -->
+        <h6>Inscrever-se</h6>
+        <form action="">
+            <div class="textbox">
+                <input type="text" placeholder="Usuário ou email">
+                <span class="check-message hidden">Obrigatório</span>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Senha">
+                <span class="check-message hidden">Obrigatório</span>
+            </div>
+            <div class="options">
+                <label class="remember-me">
+                    <span class="checkbox">
+                        <input type="checkbox">
+                        <span class="checked"></span>
+                    </span>
+                    Lembre-me
+                </label>
+                <a href="">Esqueceu a senha?</a>
+            </div>
+            <input type="submit" class="login-bt" value="Log in now" disabled>
+            <div class="privacy-link">
+                <a href="">Política de privacidade</a>
+            </div>
+        </form>
+        <div class="dont-have-account">
+            Não tem uma conta no Epic Games?
+            <a href="#">Cadastre-se</a>
+            <a class="b3" href="../index.html#tutoriais">Retornar à página principal</a>
+        </div>
+    </main>
+    <script type="text/javascript">
+        $(".textbox input").focusout(function(){
+            if($(this).val() == ""){
+                $(this).siblings().removeClass("hidden");
+                $(this).css("background", "#554343");
+            }else{
+                $(this).siblings().addClass("hidden");
+                $(this).css("background", "#484848");
+            }
+        });
+
+        $(".textbox input").keyup(function(){
+            var inputs = $(".textbox input");
+            if (inputs[0].value != "" && inputs[1].value){
+                $(".login-bt").attr("disabled", false);
+                $(".login-bt").addClass("active");
+            }else{
+                $(".login-bt").attr("disabled", true);
+                $(".login-bt").removeClass("active");
+            }
+        });
+    </script>
+</body>
+
+</html>
